@@ -1,25 +1,137 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
- <title>Kontak</title>
+  <meta charset="UTF-8">
+  <title>Kontak - Semanis</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&family=Fredoka&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #EEAAC3;
+      font-family: 'Quicksand', sans-serif;
+      color: #4A1C2E;
+    }
+
+    header {
+      padding: 50px 20px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      color: #AD1457;
+      font-family: 'Fredoka', cursive;
+      font-size: 2.2em;
+      margin-bottom: 10px;
+    }
+
+    .content {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 20px;
+      font-size: 1.1em;
+      color: #5A2B3E;
+    }
+
+    .content p {
+      margin-bottom: 10px;
+    }
+
+    form {
+      margin-top: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-family: 'Quicksand', sans-serif;
+      font-size: 1em;
+    }
+
+    textarea {
+      height: 100px;
+      resize: vertical;
+    }
+
+    input[type="submit"] {
+      background-color: #AD1457;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 1em;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #8E0F47;
+    }
+
+    nav {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    nav a {
+      text-decoration: none;
+      font-weight: bold;
+      margin: 0 15px;
+      color: #4A1C2E;
+      font-size: 1em;
+      padding: 8px 12px;
+      border-radius: 8px;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #AD1457;
+      color: white;
+    }
+  </style>
 </head>
-<body bgcolor=EEAAC3>
- <h1><font color=AD1457 font face=Arial> Hubungi Kami </font></h1>
- <p>Alamat: Jl. Pegangsaan Timur No. 56, Jakarta</p>
- <p>Telepon:0823229191510</p>
- <p>Email: semanis@gmail.com</p>
- <h2><font color=AD1457 font face=Arial>Form Pemesanan / Kritik & Saran </font></h2>
- <form>
- Nama: <input type="text" name="nama"><br><br>
- Email: <input type="email" name="email"><br><br>
- Pesan: <textarea name="pesan"></textarea><br><br>
- <input type="submit" value="Kirim">
- </form>
- <nav>
- <a href="index.html">Beranda</a> |
- <a href="tentang.html">Tentang Kami</a> |
- <a href="produk.html">Produk</a> |
- <a href="kontak.html">Kontak</a>
- </nav>
+<body>
+  <header>
+    <h1>Hubungi Kami</h1>
+  </header>
+
+  <div class="content">
+    <p><strong>Alamat:</strong> Jl. Pegangsaan Timur No. 56, Jakarta</p>
+    <p><strong>Telepon:</strong> 0823 2291 91510</p>
+    <p><strong>Email:</strong> semanis@gmail.com</p>
+
+    <h2 style="color:#AD1457; font-family:'Fredoka', cursive; margin-top:30px;">Form Pemesanan / Kritik & Saran</h2>
+
+    <form>
+      <label for="nama">Nama:</label>
+      <input type="text" id="nama" name="nama" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="pesan">Pesan:</label>
+      <textarea id="pesan" name="pesan" required></textarea>
+
+      <input type="submit" value="Kirim">
+    </form>
+  </div>
+
+  <nav>
+    <a href="index.html">Beranda</a>
+    <a href="tentang.html">Tentang Kami</a>
+    <a href="produk.html">Produk</a>
+    <a href="kontak.html">Kontak</a>
+  </nav>
 </body>
 </html>
